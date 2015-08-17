@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MDLTagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MDL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hY-86-4nk">
+                                <rect key="frame" x="232" y="38" width="135" height="52"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Hs0-Pj-9Z1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.78896982539221483" blue="0.19291066558096914" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmw-7P-nOz">
+                                <rect key="frame" x="153" y="229" width="294" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Znu-3d-3GL"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQD-Tr-xlu">
+                                <rect key="frame" x="153" y="291" width="294" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GUC-bb-vp7"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbx-hd-usL">
+                                <rect key="frame" x="255" y="345" width="89" height="33"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="nIO-7X-RRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.99607843137254903" green="0.74901960784313726" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logUserIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfG-u0-Nu0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyDealerLot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-eu-dex">
+                                <rect key="frame" x="238" y="90" width="123" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gNm-3o-2G7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.74901960784313726" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="©2015 MyDealerLot. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCY-NR-gls">
+                                <rect key="frame" x="168" y="571" width="263" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pWu-xX-Nbm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.74901960784313726" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MDL Logo 2012 - Blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lF5-Vh-thZ">
+                                <rect key="frame" x="179" y="28" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="WNq-Uw-1NW"/>
+                                    <constraint firstAttribute="height" constant="128" id="yJ1-gW-zxu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.15243128383673069" green="0.19020084172169782" blue="0.27442378393665146" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lF5-Vh-thZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="25n-Iu-Bcx"/>
+                            <constraint firstItem="eCY-NR-gls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zp-MG-DEF"/>
+                            <constraint firstItem="Zmw-7P-nOz" firstAttribute="top" secondItem="hkn-eu-dex" secondAttribute="bottom" constant="118" id="6Pk-pF-GTC"/>
+                            <constraint firstItem="5hY-86-4nk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="81T-wZ-xp9"/>
+                            <constraint firstItem="Pbx-hd-usL" firstAttribute="top" secondItem="cQD-Tr-xlu" secondAttribute="bottom" constant="24" id="DWR-j5-NaP"/>
+                            <constraint firstItem="hkn-eu-dex" firstAttribute="top" secondItem="5hY-86-4nk" secondAttribute="bottom" id="LlZ-qj-yUS"/>
+                            <constraint firstItem="5hY-86-4nk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="Nqk-0a-rtr"/>
+                            <constraint firstItem="Pbx-hd-usL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tyn-Kg-2zj"/>
+                            <constraint firstItem="cQD-Tr-xlu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nUL-Qe-djJ"/>
+                            <constraint firstItem="lF5-Vh-thZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pVM-Sz-TaB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eCY-NR-gls" secondAttribute="bottom" constant="8" id="uxm-jJ-52Q"/>
+                            <constraint firstItem="Zmw-7P-nOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xZg-Jf-YBU"/>
+                            <constraint firstItem="hkn-eu-dex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yiD-9o-3BR"/>
+                            <constraint firstItem="cQD-Tr-xlu" firstAttribute="top" secondItem="Zmw-7P-nOz" secondAttribute="bottom" constant="32" id="zwv-Uj-QhN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="cQD-Tr-xlu" id="j9I-MV-a4e"/>
+                        <outlet property="username" destination="Zmw-7P-nOz" id="n5t-NW-H4w"/>
+                        <segue destination="eYo-il-ESu" kind="show" identifier="userLogIn" id="eUy-SL-dFX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="537"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="UVq-er-D1D">
+            <objects>
+                <tableViewController id="eYo-il-ESu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QJn-uR-v9k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6Mn-gF-bbY">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Mn-gF-bbY" id="ddv-Pf-lI5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eYo-il-ESu" id="boa-q3-1m8"/>
+                            <outlet property="delegate" destination="eYo-il-ESu" id="0mo-ze-u0S"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jir-nh-Tvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="537"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MDL Logo 2012 - Blue.jpg" width="3313" height="2188"/>
+    </resources>
+</document>
